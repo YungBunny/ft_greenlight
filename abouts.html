@@ -1,0 +1,296 @@
+<HTML>
+	<HEAD>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+		<TITLE>Greenlight</TITLE>
+		<STYLE>
+			body { margin:0; padding:0; background-color:#f1f1f1; 	font-family: 'Space Mono', monospace;}
+			ul {
+				list-style-type: none;
+				position: fixed;
+				width:100%;
+				top:0;
+				margin: 0;
+				float: right;
+				padding: 1em 0 0 0;
+			}
+			li {
+				display: inline;
+				margin: 20px;
+				font-weight: bold;
+				font-size: 0.9em;
+			}
+			li a {
+				text-decoration: none;
+				color: white;
+				display: inline-block;
+			}
+			li.logo{
+				color: white;
+				font-weight: bold;
+				float:right;
+				left: 70%;
+				font-size: 40px;
+				top:-20px;
+				margin-top: -10px;
+			}
+			.button {
+				border: solid 2px;
+				padding: 5px 10px 5px 10px;
+				border-radius: 2px;
+			}
+			.button:hover {
+				background: rgba(0, 0, 0, 0.2);
+			}
+			.circle0 {
+				border-radius: 25%;
+				height: 200px;
+				width: 200px;
+				margin: 0px;
+				background: rgba(51, 77, 0, 0.6);
+				transition: all 1.5s linear;
+				animation: test0 5.5s forwards;
+				opacity:0;
+				/*border:10px solid rgba(204, 153, 0, 1);*/
+				background-image: url('./kcheung.jpg');
+				background-repeat: no-repeat;
+				background-position-x: -75px;
+				background-position-y: -40px;
+				background-size: 360px 250px;
+				border:2px solid white;
+			}
+			.circle1 {
+				border-radius: 25%;
+				height: 200px;
+				width: 200px;
+				margin: 0px;
+				background: rgba(51, 77, 0, 0.6);
+				transition: all 1.5s linear;
+				animation: test1 5.5s forwards;
+				opacity:0;
+				background-image: url('./mmorrel.jpg');
+				background-repeat: no-repeat;
+				background-size: 260px 260px;
+				background-position-x:-60px;
+				border:2px solid white;
+			}
+			.circle2 {
+				border-radius: 25%;
+				height: 200px;
+				width: 200px;
+				margin: 0px;
+				background: rgba(51, 77, 0, 0.6);
+				transition: all 1.5s linear;
+				animation: test2 5.5s forwards;
+				opacity:0;
+				background-image: url('./tchan.jpg');
+				background-repeat: no-repeat;
+				background-size: 330px 220px;
+				background-position-x:-60px;
+				background-position-y:-20px;
+				filter: contrast(120%) brightness(110%);
+				border:2px solid white;
+			}
+			.circle3 {
+				border-radius: 25%;
+				height: 200px;
+				width: 200px;
+				margin: 0px;
+				background: rgba(51, 77, 0, 0.6);
+				transition: all 1.5s linear;
+				animation: test3 5.5s forwards;
+				opacity:0;
+				background-image: url('./cfu.jpeg');
+				background-repeat: no-repeat;
+				background-size: 200px 260px;
+				filter: brightness(105%) hue-rotate(15deg);
+				border:2px solid white;
+			}
+			.blurb0 {
+				height: 200px;
+				width: 500px;
+				margin: 0px;
+				background: rgba(230, 255, 230, 0.5);
+				transition: all 1.5s linear;
+				animation: test4 5.5s forwards;
+				opacity:0;
+				border: 2px solid white;
+				color:black;
+			}
+			.blurb1 {
+				height: 200px;
+				width: 500px;
+				margin: 0px;
+				background: rgba(204, 255, 153, 0.4);
+				transition: all 1.5s linear;
+				animation: test5 5.5s forwards;
+				opacity:0;
+				border: 2px solid white;
+			}
+			.blurb2 {
+				height: 200px;
+				width: 500px;
+				margin: 0px;
+				background: rgba(102, 153, 0, 0.3);
+				transition: all 1.5s linear;
+				animation: test6 5.5s forwards;
+				opacity:0;
+				border: 2px solid white;
+			}
+			.blurb3 {
+				height: 200px;
+				width: 500px;
+				margin: 0px;
+				background: rgba(33, 51, 0, 0.3);
+				transition: all 1.5s linear;
+				animation: test7 5.5s forwards;
+				opacity:0;
+				border: 2px solid white;
+			}
+			.thanks {
+				height: 25px;
+				background: rgba(33, 51, 0, 0.5);
+				transition: all 1.5s linear;
+				animation: test8 5.5s forwards;
+				opacity:0;
+				padding:-100px -100px 0 -100px;
+				text-align:center;
+			}
+
+			@keyframes test0{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(200px);
+				}
+			}	
+			@keyframes test1{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(250px);
+				}
+			}		
+			@keyframes test2{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(300px);
+				}
+			}
+			@keyframes test3{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(350px);
+				}
+			}
+			@keyframes test4{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(190px);
+				}
+			}	
+			@keyframes test5{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(240px);
+				}
+			}		
+			@keyframes test6{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(290px);
+				}
+			}
+			@keyframes test7{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(340px);
+				}
+			}
+			@keyframes test8{
+				0%{
+					opacity:0;
+				}
+				100%{
+					opacity:1;
+					transform: translateY(475px);
+				}
+			}
+
+			.photo{
+				position: absolute;
+				float:left;
+				width:300px;
+				height:500px;
+				padding-left:250px;
+			}
+			.blurb{
+				width:600px;
+				height:500px;
+				padding-left:550px;
+			}
+			.middle{
+				width: 60%;
+				height: 60%;
+				margin:auto;
+			}
+			p.desc{
+				color: black;
+				text-align:center;
+			}
+			p.thank{
+				color: white;
+				text-align:center;
+			}
+
+		</STYLE>
+	</HEAD>
+	<body class="corner1" style="background-color:rgba(204, 136, 0, 0.6);">
+		<nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li class="button"><a href="">About</a></li>
+			<li class="logo"><a href="">Ft_Greenlight</a><li>
+		</ul>
+		</nav>
+		<div>
+		<div class="middle">
+			<div class="photo">
+				<div class="circle0"></div>
+				<div class="circle1"></div>
+				<div class="circle2"></div>
+				<div class="circle3"></div>
+			</div>
+			<div class="blurb">
+				<div class="blurb0"><p class="desc"><b>Kenny Cheung</b> // 3D printing engineer & product designer // <u>kcheung@student.42.us.org</u><br>Long time hydroponics enthusiast, Kenny always wanted to build these farms of the future for his parents. For now, he's given back to the 42 family, and looks to combine these towers with his passion for machine learning.</p></div>	
+				<div class="blurb1"><p class="desc"><b>Michael Morrel</b> // hardware engineer & back end developer // <u> mmorel@student.42.us.org </u><br>Michael, the hardware guru of the clan, is responsible for the self sufficient aspect of the tower. Utilizing the Arduino and Pi is almost like giving the plants a voice-- the ability to project its needs.</p></div>
+				<div class="blurb2"><p class="desc"><b>Truman Chan</b> // in-house botanist & professional researcher // <u>tchan@student.42.us.org</u><br>Having a very wholistic and organic persona, Truman is the handbook for agricultural information, giving the team insight on how to build the structure to fit the needs of nature.</p></div>
+				<div class="blurb3"><p class="desc"><b>Chanel Fu</b> // UX designer & front end developer // <u>cfu@student.42.us.org</u><br>A creative and sustainability advocate at heart, Chanel wanted to create a fun, interactive website for Greenlight using her newfound knowledge in her recent introduction to PHP, HTML, and CSS.</p></div>
+			</div>
+		</div>
+		<div class="thanks"><p class="thank">A special thank you to 42 staff, Akia Vongdara, Isaac Rhett, Sean Darcey & Andres Pineda.</p></div>
+	</div>
+	</body>
+</HTML>
